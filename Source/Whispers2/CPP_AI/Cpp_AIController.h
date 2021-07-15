@@ -27,6 +27,7 @@ public:
 	ACpp_AIController();
 
 	void SetPlayerCaught(APawn* InPawn);
+	void ResetPlayerCaught();
 	UFUNCTION(BlueprintCallable)
 	FORCEINLINE UBlackboardComponent* GeBlackBoardComponent(){ return BlackboardCompoonent; }
 	UFUNCTION(BlueprintCallable)

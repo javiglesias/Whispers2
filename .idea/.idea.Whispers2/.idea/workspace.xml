@@ -23,9 +23,9 @@
       <option value="$PROJECT_DIR$/Source/Whispers2/Whispers2.Build.cs" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_BTTSelectPointToGo.h" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_BTTSelectPointToGo.cpp" />
-      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.cpp" />
-      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.h" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.h" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.h" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.cpp" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.cpp" />
     </changedPaths>
   </component>
@@ -167,11 +167,22 @@
       <workItem from="1626346228252" duration="3076000" />
       <workItem from="1626358137166" duration="6672000" />
       <workItem from="1626365200873" duration="4418000" />
-      <workItem from="1626370763147" duration="7964000" />
+      <workItem from="1626370763147" duration="10139000" />
     </task>
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.cpp</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

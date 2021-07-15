@@ -33,6 +33,9 @@ void ACpp_AICharacter::OnPlayerCaught(APawn* InPawn)
 	if(CharacterController)
 	{
 		CharacterController->SetPlayerCaught(InPawn);
+	} else
+	{
+		CharacterController->ResetPlayerCaught();
 	}
 }
 

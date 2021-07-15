@@ -21,6 +21,14 @@ void ACpp_AIController::SetPlayerCaught(APawn* InPawn)
 	}
 }
 
+void ACpp_AIController::ResetPlayerCaught()
+{
+	if(BlackboardCompoonent)
+	{
+		BlackboardCompoonent->SetValueAsObject(PlayerKey, nullptr);
+	}
+}
+
 
 void ACpp_AIController::OnPossess(APawn* InPawn)
 {
