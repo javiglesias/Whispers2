@@ -35,3 +35,4 @@ void ACpp_AICharacter::OnPlayerCaught(APawn* InPawn)
 		CharacterController->SetPlayerCaught(InPawn);
 	}
 }
+

@@ -25,5 +25,7 @@ private:
 	//
 	UFUNCTION()
 		void OnPlayerCaught(APawn* InPawn);
+	UFUNCTION()
+		void OnPlayerHeared(APawn* InPawn, FVector Location, float Volume);
 };
 

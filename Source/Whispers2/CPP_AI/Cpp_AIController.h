@@ -6,7 +6,7 @@
 #include "Cpp_AIController.generated.h"
 
 UCLASS()
-class WHISPERS2_API ACpp_AIController : public AController
+class WHISPERS2_API ACpp_AIController : public AAIController
 {
 	GENERATED_BODY()
 private:
@@ -21,12 +21,18 @@ private:
 		TArray<AActor*> PatrolPoints;
 
 	virtual void OnPossess(APawn* InPawn) override;
-
+	
 	int32 CurrentPatrolPoint = 0;
 public:
 	ACpp_AIController();
 
 	void SetPlayerCaught(APawn* InPawn);
+	UFUNCTION(BlueprintCallable)
 	FORCEINLINE UBlackboardComponent* GeBlackBoardComponent(){ return BlackboardCompoonent; }
+	UFUNCTION(BlueprintCallable)
 	FORCEINLINE TArray<AActor*> GetPatrolPoints() {return PatrolPoints;}
+	UFUNCTION(BlueprintCallable)
+	FORCEINLINE int32 GetCurrentPoint() { return CurrentPatrolPoint; }
+	UFUNCTION(BlueprintCallable)
+	FORCEINLINE void SetCurrentPoint(int32 value) { CurrentPatrolPoint = value; }
 };

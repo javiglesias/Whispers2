@@ -13,17 +13,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/ACpp_AIController.cpp" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/ACpp_AIController.h" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/Whispers2.Build.cs" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_BTTSelectPointToGo.h" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_BTTSelectPointToGo.cpp" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.cpp" />
-      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.h" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.h" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vLfD4vymvXrs4Lsv5ik8LjRwf0" />
@@ -33,10 +36,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35026455" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3504762" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager" selected="C++ Project.Whispers2">
     <configuration name="UE5" type="CppProject" factoryName="C++ Project">
@@ -162,6 +166,8 @@
       <updated>1626346180447</updated>
       <workItem from="1626346228252" duration="3076000" />
       <workItem from="1626358137166" duration="6672000" />
+      <workItem from="1626365200873" duration="4418000" />
+      <workItem from="1626370763147" duration="7375000" />
     </task>
     <servers />
   </component>

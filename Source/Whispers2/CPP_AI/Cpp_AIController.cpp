@@ -1,9 +1,13 @@
 ﻿#include "Cpp_AIController.h"
 
+#include "Kismet/GameplayStatics.h"
+
 ACpp_AIController::ACpp_AIController()
 {
 	BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>(TEXT("BehaviorTree"));
 	BlackboardCompoonent = CreateDefaultSubobject<UBlackboardComponent>(TEXT("BlackboardCOmponent"));
+	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(),AActor::StaticClass(),FName("PatrolIAPoint"), PatrolPoints);
+	
 	PlayerKey = "Amelia";
 	LocationToGoKey = "LocationToGo";
 	CurrentPatrolPoint = 0;
