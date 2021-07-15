@@ -11,6 +11,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Source/Whispers2/Whispers2GameModeBase.cpp" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/Whispers2GameModeBase.h" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/ACharacterPlayerWhispers2.h" />
+    </changedPaths>
+  </component>
   <component name="ProjectId" id="1vJXetyZrkGhX5mAVaSqMyVz3ld" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -146,6 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626281276552</updated>
       <workItem from="1626281281894" duration="1416000" />
+      <workItem from="1626344896903" duration="1177000" />
     </task>
     <servers />
   </component>

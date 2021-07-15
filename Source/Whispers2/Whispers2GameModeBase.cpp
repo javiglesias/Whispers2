@@ -3,3 +3,4 @@
 
 #include "Whispers2GameModeBase.h"
 
+#include "GameFramework/DefaultPawn.h"
