@@ -19,6 +19,14 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "ShallowWater",
+			"Enabled": true
+		},
+		{
+			"Name": "Water",
+			"Enabled": true
 		}
 	]
 }
