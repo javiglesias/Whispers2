@@ -4,6 +4,8 @@ Intermediate
 Saved
 .vscode
 .vs
+.sln
+.idea
 *.VC.db
 *.opensdf
 *.opendb
