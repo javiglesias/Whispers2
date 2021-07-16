@@ -13,6 +13,12 @@ ACpp_AICharacter::ACpp_AICharacter()
 	AI_Senses->SetPeripheralVisionAngle(90.f);
 }
 
+float ACpp_AICharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator,
+	AActor* DamageCauser)
+{
+	return DamageAmount;
+}
+
 void ACpp_AICharacter::BeginPlay()
 {
 	Super::BeginPlay();
