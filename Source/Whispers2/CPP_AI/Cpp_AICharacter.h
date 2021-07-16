@@ -26,7 +26,7 @@ private:
 	//
 	UFUNCTION()
 		void OnPlayerCaught(APawn* InPawn);
-
-	int32 Health = 10;
+	UPROPERTY(EditDefaultsOnly, Category="Health")
+		int32 Health = 10;
 };
 

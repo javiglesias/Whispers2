@@ -27,6 +27,7 @@
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIController.cpp" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.cpp" />
       <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AICharacter.h" />
+      <option value="$PROJECT_DIR$/Source/Whispers2/CPP_AI/Cpp_AIManager.h" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vLfD4vymvXrs4Lsv5ik8LjRwf0" />
@@ -168,7 +169,8 @@
       <workItem from="1626358137166" duration="6672000" />
       <workItem from="1626365200873" duration="4418000" />
       <workItem from="1626370763147" duration="11658000" />
-      <workItem from="1626420652172" duration="2495000" />
+      <workItem from="1626420652172" duration="4596000" />
+      <workItem from="1626429813477" duration="373000" />
     </task>
     <servers />
   </component>
