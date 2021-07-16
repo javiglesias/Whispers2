@@ -33,8 +33,8 @@ protected:
 	void TurnRate(float Rate);
 	void LookUpRate(float Rate);
 
-	float TurnRate;
-	float LookupRate;
+	float TurnRatio;
+	float LookUpRatio;
 	
 public:	
 	// Called every frame

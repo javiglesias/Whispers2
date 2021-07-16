@@ -28,8 +28,8 @@ AC_CharacterPlayer::AC_CharacterPlayer()
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0,540,0);
 
-	TurnRate = 45;
-	LookupRate = 45;
+	TurnRatio = 45;
+	LookUpRatio = 45;
 	
 }
 	
@@ -79,11 +79,11 @@ void AC_CharacterPlayer::RighLeft(float Value)
 
 void AC_CharacterPlayer::TurnRate(float Rate)
 {
-		AddControllerYawInput(Rate * GetWorld()->GetDeltaSeconds() * TurnRate()
+		AddControllerYawInput(Rate * GetWorld()->GetDeltaSeconds() * TurnRatio);
 }
 
 void AC_CharacterPlayer::LookUpRate(float Rate)
 {
-	AddControllerPitchInput(Rate * GetWorld()->GetDeltaSeconds() * TurnRate()
+	AddControllerPitchInput(Rate * GetWorld()->GetDeltaSeconds() * TurnRatio);
 }
 
