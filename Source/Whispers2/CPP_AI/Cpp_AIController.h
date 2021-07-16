@@ -36,4 +36,7 @@ public:
 	FORCEINLINE int32 GetCurrentPoint() { return CurrentPatrolPoint; }
 	UFUNCTION(BlueprintCallable)
 	FORCEINLINE void SetCurrentPoint(int32 value) { CurrentPatrolPoint = value; }
+
+	UPROPERTY(EditAnywhere)
+	FName TagPatrolPoints = "PatrolIAPoint";
 };

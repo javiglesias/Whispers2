@@ -6,7 +6,7 @@ ACpp_AIController::ACpp_AIController()
 {
 	BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>(TEXT("BehaviorTree"));
 	BlackboardCompoonent = CreateDefaultSubobject<UBlackboardComponent>(TEXT("BlackboardCOmponent"));
-	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(),AActor::StaticClass(),FName("PatrolIAPoint"), PatrolPoints);
+	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(),AActor::StaticClass(),TagPatrolPoints, PatrolPoints);
 	
 	PlayerKey = "Amelia";
 	LocationToGoKey = "LocationToGo";

@@ -20,7 +20,6 @@ public:
 	UPROPERTY(VisibleAnywhere, Category="Senses")
 		UPawnSensingComponent* AI_Senses;
 private:
-	virtual float TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	//
