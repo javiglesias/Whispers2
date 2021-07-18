@@ -53,12 +53,12 @@ void AC_CharacterPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 {
 	check(PlayerInputComponent);
 
-	PlayerInputComponent->BindAxis("Forward-Backwards", this,&AC_CharacterPlayer::ForwardBackwards );
-	PlayerInputComponent->BindAxis("Right-Left", this,&AC_CharacterPlayer::RighLeft );
-	PlayerInputComponent->BindAxis("LookUp", this, &AC_CharacterPlayer::TurnRate);
-	PlayerInputComponent->BindAxis("Turn", this,&AC_CharacterPlayer::LookUpRate );
-	PlayerInputComponent->BindAxis("LookUpRate", this,&APawn::AddControllerYawInput );
-	PlayerInputComponent->BindAxis("TurnRate", this,&APawn::AddControllerPitchInput );
+	PlayerInputComponent->BindAxis("MoveForward", this,&AC_CharacterPlayer::ForwardBackwards );
+	PlayerInputComponent->BindAxis("MoveRight", this,&AC_CharacterPlayer::RighLeft);
+	PlayerInputComponent->BindAxis("LookUp", this, &AC_CharacterPlayer::LookUpRate);
+	PlayerInputComponent->BindAxis("Turn", this,&AC_CharacterPlayer::TurnRate);
+	PlayerInputComponent->BindAxis("LookUpRate", this,&APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAxis("TurnRate", this,&APawn::AddControllerYawInput);
 	
 }
 
@@ -68,13 +68,20 @@ void AC_CharacterPlayer::ForwardBackwards(float Value)
 	{
 		const FRotator Rotation = Controller->GetControlRotation();
 		const FRotator Yaw(0,Rotation.Yaw,0);
-		const FVector direction = FRotationMatrix(Yaw).GetUnitAxis((EAxis::X));
+		const FVector direction = FRotationMatrix(Yaw).GetUnitAxis(EAxis::X);
 		AddMovementInput(direction,Value);
 	}
 }
 
 void AC_CharacterPlayer::RighLeft(float Value)
 {
+	if(Controller != NULL && Value != 0.0 )
+	{
+		const FRotator Rotation = Controller->GetControlRotation();
+		const FRotator Yaw(0,Rotation.Yaw,0);
+		const FVector direction = FRotationMatrix(Yaw).GetUnitAxis(EAxis::Y);
+		AddMovementInput(direction,Value);
+	}
 }
 
 void AC_CharacterPlayer::TurnRate(float Rate)
@@ -84,6 +91,6 @@ void AC_CharacterPlayer::TurnRate(float Rate)
 
 void AC_CharacterPlayer::LookUpRate(float Rate)
 {
-	AddControllerPitchInput(Rate * GetWorld()->GetDeltaSeconds() * TurnRatio);
+		AddControllerPitchInput(Rate * GetWorld()->GetDeltaSeconds() * TurnRatio);
 }
 
