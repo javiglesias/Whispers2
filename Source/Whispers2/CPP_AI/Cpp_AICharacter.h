@@ -22,10 +22,7 @@ public:
 private:
 	virtual void BeginPlay() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
-	//
 	UFUNCTION()
 		void OnPlayerCaught(APawn* InPawn);
-	UPROPERTY(EditDefaultsOnly, Category="Health")
-		int32 Health = 10;
 };
 
